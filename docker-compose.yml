@@ -1,5 +1,4 @@
 master:
-  container_name: jenkins-docker
   build: .
   environment:
     JAVA_OPTS: "-Djava.awt.headless=true"
