@@ -21,7 +21,7 @@ dslBuilder = new ExecuteDslScripts(scriptLocation=new ExecuteDslScripts.ScriptLo
   ignoreExisting=false, 
   removedJobAction=RemovedJobAction.DISABLE);
 seedJobProject = new hudson.model.FreeStyleProject(jenkins, jobName);
-seedJobProject.scm = new GitSCM("git@github.com:jiramot/jenkins-docker.git");
+seedJobProject.scm = new GitSCM("https://github.com/jiramot/jenkins-docker.git");
 seedJobProject.scm.branches = [new BranchSpec("*/master")];
 seedJobProject.getPublishersList().add(dslBuilder);
 jenkins.add(seedJobProject, jobName);
