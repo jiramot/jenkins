@@ -6,6 +6,8 @@ copyartifact
 delivery-pipeline-plugin
 email-ext
 gatling
+git-client
+scm-api
 git
 gradle
 grails
