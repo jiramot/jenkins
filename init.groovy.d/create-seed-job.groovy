@@ -8,9 +8,7 @@ import javaposse.jobdsl.plugin.*;
 
 
 jenkins = Jenkins.instance;
-jenkins.setNumExecutors(8);
-
-println "aaaaaaaaaaaaa"
+jenkins.setNumExecutors(4);
 
 configuration = JenkinsLocationConfiguration.get();
 configuration.setUrl(System.getenv("JENKINS_URL"));
