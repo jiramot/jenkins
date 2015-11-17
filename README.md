@@ -26,3 +26,4 @@ $docker-compose up
 
 See more
 - [job-dsl](https://github.com/jenkinsci/job-dsl-plugin)
+- [official jenkins docker](https://github.com/jenkinsci/docker)
