@@ -7,6 +7,7 @@ cloudbees-folder
 copyartifact
 delivery-pipeline-plugin
 email-ext
+filesystem_scm
 gatling
 git
 git-client
