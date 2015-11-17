@@ -23,6 +23,7 @@ job-dsl
 jobConfigHistory
 jquery
 monitoring
+multiple-scms
 parameterized-trigger
 pegdown-formatter
 publish-over-ssh
