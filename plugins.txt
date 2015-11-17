@@ -1,4 +1,5 @@
 all-changes
+analysis-core
 build-monitor-plugin
 checkstyle
 cloudbees-folder
@@ -6,15 +7,15 @@ copyartifact
 delivery-pipeline-plugin
 email-ext
 gatling
-git-client
-scm-api
 git
+git-client
 gradle
 grails
 greenballs
 groovy
 groovy-postbuild
 htmlpublisher
+instant-messaging
 jabber
 jacoco
 job-dsl
@@ -25,8 +26,11 @@ pegdown-formatter
 publish-over-ssh
 role-strategy
 ruby
+scm-api
 sidebar-link
 template-project
 timestamper
+token-macro
 violations
+workflow-step-api
 xcode-plugin
