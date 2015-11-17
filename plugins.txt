@@ -1,5 +1,6 @@
 all-changes
 analysis-core
+ansicolor
 build-monitor-plugin
 checkstyle
 cloudbees-folder
@@ -20,6 +21,7 @@ jabber
 jacoco
 job-dsl
 jobConfigHistory
+jquery
 monitoring
 parameterized-trigger
 pegdown-formatter
