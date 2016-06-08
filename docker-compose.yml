@@ -1,10 +1,18 @@
-master:
-  build: .
-  environment:
-    JAVA_OPTS: "-Djava.awt.headless=true"
-  ports:
-    - "50000:50000"
-    - "8080:8080"
-  volumes:
-    - /var/jenkins_home
-    - ./job-dsl:/var/job-dsl
+version: '2'
+
+services:
+  ci_master:
+    build: .
+    environment:
+      JAVA_OPTS: "-Djava.awt.headless=true"
+    ports:
+      - "50000:50000"
+      - "8080:8080"
+    volumes:
+      - data:/var/jenkins_home
+      - ./job-dsl:/var/job-dsl
+      - ./init.groovy.d/create-seed-job.groovy:/usr/share/jenkins/ref/init.groovy.d/00-create-seed-job.groovy
+
+volumes:
+  data:
+    driver: local      
