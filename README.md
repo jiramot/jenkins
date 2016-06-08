@@ -1,29 +1,20 @@
 # Jenkins-docker
 
-To create jenkins's docker container with plugin job-sdl to auto re-create all your job.
+This project for demo immutable jenkins with job-dsl plugin.
 
-Docker compose will mount job-dsl folder to container.
+So in this project I mount the job-dsl folder into docker, Another way you can change the init.groovy.d/create-seed-job.groovy to create seed job from pulling from the git
 
-```
-ci_master:
-  image: jiramot/jenkins-docker
-  container_name: ci_master
-  environment:
-    JAVA_OPTS: "-Djava.awt.headless=true"
-  ports:
-    - "50000:50000"
-    - "8080:8080"
-  volumes:
-    - /var/jenkins_home
-    - ./job-dsl:/var/job-dsl
-```
-
-To start docker compose
+### To start docker compose
 
 ```
 $docker-compose up
 ```
 
-See more
-- [job-dsl](https://github.com/jenkinsci/job-dsl-plugin)
-- [official jenkins docker](https://github.com/jenkinsci/docker)
+Official jenkins docker has script to download plugin from plugins.txt during build a docker image, so that I put all necessary plugin into that file
+
+by the way that script only download and save into jenkins plugins folder BUT is some plugin had a dependencies plugin so you need to put all dependencies plugin into plugins.txt.
+
+### See more
+- [Job-dsl](https://github.com/jenkinsci/job-dsl-plugin)
+- [Job DSL API Viewe](https://jenkinsci.github.io/job-dsl-plugin/)
+- [Official jenkins docker](https://github.com/jenkinsci/docker)
